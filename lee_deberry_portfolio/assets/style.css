@@ -1,5 +1,13 @@
 * {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+#portfolio {
+    text-align: center;
 }
 
 section {
@@ -8,11 +16,20 @@ section {
 }
 
 section header {
-    flex-basis: 25%;
+    flex-basis: 10%;
     border-right: solid green 3px;
     margin-right: 25px;
     text-align: right;
     padding: 10px;
+    font-size: large;
+}
+
+main img {
+    max-height: 200px;
+}
+
+#horiseon {
+    background-image: url(./images/digital-marketing-meeting.jpg)
 }
 
 section div {
@@ -23,11 +40,19 @@ section div {
 #projects {
     display: flex;
     flex-wrap: wrap;
+    background-color: aqua;
 }
 
 #projects a {
-    flex-basis: 50%;
+    flex-basis: calc(50% - 1em);
     height: 150px;
+    border: 2px solid black;
+    margin: 0.5em;
+    background-size: cover;
+}
+
+#projects a > div {
+    width: 30%;
 }
 
 #projects a:first-child {
@@ -39,6 +64,11 @@ section div {
     display: flex;
     font-size: 30px;
     justify-content: space-between;
+}
+
+#footer {
+    padding: 25px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1000px) {

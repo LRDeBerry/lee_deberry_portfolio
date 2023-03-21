@@ -6,6 +6,25 @@
     padding: 0;
 }
 
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    text-align: end;
+  }
+  
+ 
+  .header a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
 #portfolio {
     text-align: center;
 }
@@ -72,5 +91,12 @@ section div {
 }
 
 @media screen and (max-width: 1000px) {
-
-}
+    .header a {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+    .header-right {
+        float: none;
+      }
+    }
